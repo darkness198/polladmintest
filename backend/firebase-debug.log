@@ -1,0 +1,114 @@
+[debug] [2020-03-07T17:21:44.768Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T17:21:44.771Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darkstar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2020-03-07T17:21:44.771Z] CLI Version:   7.13.0
+[debug] [2020-03-07T17:21:44.771Z] Platform:      win32
+[debug] [2020-03-07T17:21:44.771Z] Node Version:  v10.16.0
+[debug] [2020-03-07T17:21:44.782Z] Time:          Sat Mar 07 2020 12:21:44 GMT-0500 (Eastern Standard Time)
+[debug] [2020-03-07T17:21:44.782Z] ----------------------------------------------------------------------
+[debug] [2020-03-07T17:21:44.782Z] 
+[debug] [2020-03-07T17:21:44.852Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-07T17:21:44.853Z] > authorizing via signed-in user
+[debug] [2020-03-07T17:21:44.853Z] [iam] checking project nestcloud for permissions ["firebase.projects.get"]
+[debug] [2020-03-07T17:21:44.856Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-07T17:21:44.856Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-07T17:21:45.057Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-07T17:21:45.069Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nestcloud:testIamPermissions  
+
+[debug] [2020-03-07T17:21:45.701Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-07T17:21:45.702Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nestcloud  
+ 
+[debug] [2020-03-07T17:21:46.332Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@10 from host.
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "D:\Code\Unfriend Them\backend\server" for Cloud Functions...
+[debug] [2020-03-07T17:21:48.384Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-07T17:21:48.385Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-07T17:21:48.385Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-07T17:21:48.386Z] [worker-~diagnostic~-7971b089-1c28-47a6-ac33-1886239c0c5a]: Assigning socketPath: \\?\pipe\D:\Code\Unfriend Them\backend\server\866584
+[debug] [2020-03-07T17:21:48.386Z] [worker-~diagnostic~-7971b089-1c28-47a6-ac33-1886239c0c5a]: BUSY
+[debug] [2020-03-07T17:21:49.167Z] [runtime-status] [866584] Functions runtime initialized. {"cwd":"D:\\Code\\Unfriend Them\\backend\\server","node_version":"10.16.0"}
+[debug] [2020-03-07T17:21:49.168Z] [runtime-status] [866584] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-07T17:21:49.174Z] [runtime-status] [866584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-07T17:21:49.176Z] [runtime-status] [866584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-07T17:21:49.177Z] [runtime-status] [866584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] >  { autoSchemaFile: './dist/schema.gql.log' }
+[info] >  createNest
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [NestFactory] Starting Nest application...
+[info] +  functions[api]: http function initialized (http://localhost:5000/nestcloud/us-central1/api).
+[debug] [2020-03-07T17:22:17.094Z] [worker-~diagnostic~-7971b089-1c28-47a6-ac33-1886239c0c5a]: IDLE
+[info] >  MADE IT
+[info] >  false
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [InstanceLoader] AppModule dependencies initialized +22ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [InstanceLoader] GraphQLModule dependencies initialized +1ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [RoutesResolver] AppController {/}: +8ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [RouterExplorer] Mapped {/test, GET} route +4ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [RouterExplorer] Mapped {/hippoTest, GET} route +1ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [RouterExplorer] Mapped {/addHippo, POST} route +2ms
+[info] >  [Nest] 866584   - 03/07/2020, 12:22:17 PM   [NestApplication] Nest application successfully started +160ms
+[info] >  Nest Ready
+[debug] [2020-03-07T17:22:38.610Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-07T17:22:38.610Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-07T17:22:38.611Z] Accepted request GET /nestcloud/us-central1/api/graphql?query=%7BallUsers%7Bid,facebookId,%20accessToken,friends%7BfirstName,lastName,%20id%7D%7D%7D --> api
+[debug] [2020-03-07T17:22:38.623Z] [worker-pool] addWorker(api)
+[debug] [2020-03-07T17:22:38.623Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-07T17:22:38.623Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-07T17:22:38.623Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: Assigning socketPath: \\?\pipe\D:\Code\Unfriend Them\backend\server\875696
+[debug] [2020-03-07T17:22:38.623Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: BUSY
+[debug] [2020-03-07T17:22:39.537Z] [runtime-status] [875696] Functions runtime initialized. {"cwd":"D:\\Code\\Unfriend Them\\backend\\server","node_version":"10.16.0"}
+[debug] [2020-03-07T17:22:39.539Z] [runtime-status] [875696] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-07T17:22:39.543Z] [runtime-status] [875696] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-07T17:22:39.545Z] [runtime-status] [875696] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-07T17:22:39.546Z] [runtime-status] [875696] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"D:\\Code\\Unfriend Them\\backend\\server\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] >  { autoSchemaFile: './dist/schema.gql.log' }
+[info] >  createNest
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [NestFactory] Starting Nest application...
+[debug] [2020-03-07T17:22:42.234Z] [runtime-status] [875696] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-07T17:22:42.236Z] [runtime-status] [875696] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-07T17:22:42.236Z] [runtime-status] [875696] Running api in mode HTTPS
+[debug] [2020-03-07T17:22:42.240Z] [runtime-status] [875696] Attempting to listen to socketPath: \\?\pipe\D:\Code\Unfriend Them\backend\server\875696
+[info] >  MADE IT
+[info] >  false
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [InstanceLoader] AppModule dependencies initialized +31ms
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [InstanceLoader] GraphQLModule dependencies initialized +1ms
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [RoutesResolver] AppController {/}: +6ms
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [RouterExplorer] Mapped {/test, GET} route +4ms
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [RouterExplorer] Mapped {/hippoTest, GET} route +1ms
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [RouterExplorer] Mapped {/addHippo, POST} route +2ms
+[debug] [2020-03-07T17:22:42.322Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-07T17:22:42.335Z] [runtime-status] [875696] Ephemeral server handling GET request
+[debug] [2020-03-07T17:22:42.339Z] [runtime-status] [875696] Ephemeral server survived.
+[info] >  [Nest] 875696   - 03/07/2020, 12:22:42 PM   [NestApplication] Nest application successfully started +123ms
+[info] >  Nest Ready
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-07T17:22:42.407Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: IDLE
+[debug] [2020-03-07T17:22:42.408Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-07T17:22:59.255Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-07T17:22:59.255Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-07T17:22:59.255Z] Accepted request GET /nestcloud/us-central1/api/graphql?query=%7BallUsers%7Bid,facebookId,%20accessToken,friends%7BfirstName,lastName,%20id%7D%7D%7D --> api
+[debug] [2020-03-07T17:22:59.256Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-07T17:22:59.256Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: Assigning socketPath: \\?\pipe\D:\Code\Unfriend Them\backend\server\875696
+[debug] [2020-03-07T17:22:59.256Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: BUSY
+[debug] [2020-03-07T17:22:59.256Z] [runtime-status] [875696] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-07T17:22:59.257Z] [runtime-status] [875696] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-07T17:22:59.258Z] [runtime-status] [875696] Running api in mode HTTPS
+[debug] [2020-03-07T17:22:59.258Z] [runtime-status] [875696] Attempting to listen to socketPath: \\?\pipe\D:\Code\Unfriend Them\backend\server\875696
+[debug] [2020-03-07T17:22:59.259Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-07T17:22:59.261Z] [runtime-status] [875696] Ephemeral server handling GET request
+[debug] [2020-03-07T17:22:59.261Z] [runtime-status] [875696] Ephemeral server survived.
+[info] >  attempt # 0
+[info] >  isConnected false
+[info] >  attempt # 1
+[info] >  isConnected false
+[info] >  attempt # 2
+[info] >  isConnected false
+[info] >  attempt # 3
+[info] >  isConnected false
+[info] >  attempt # 4
+[info] >  isConnected false
+[info] >  {"response":{"status":504,"error":"Error in connection"},"status":408,"message":{"status":504,"error":"Error in connection"}}
+[info] i  functions: Finished "api" in ~11s
+[debug] [2020-03-07T17:23:11.626Z] [worker-api-20646322-5463-4e39-bc0d-ae6a705ff74f]: IDLE
+[debug] [2020-03-07T17:23:11.626Z] [work-queue] {"queueLength":0,"workRunningCount":0}

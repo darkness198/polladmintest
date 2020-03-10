@@ -1,0 +1,17 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center none">
+  <div fxFlex="95%">
+    <button mat-raised-button>Answer Question to Poll</button>
+    <mat-card>
+      <mat-card-content>
+        <div *ngIf="currentQuestion">
+          <h2>Question</h2>
+
+          {{ currentQuestion.questionText }}
+
+          <button mat-raised-button (click)="sendAnswer(true)">Yes</button
+          ><button mat-raised-button (click)="sendAnswer(false)">No</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center none">
+  <div class="addUserContainer">
+    <button (click)="addUser()">Add user</button>
+    <form *ngIf="formCreated" [formGroup]="addUserForm">
+      
+      <mat-form-field >
+        <input id="firstNameInput" matInput placeholder="First Name" formControlName="firstName">
+        <mat-error id="requiredFirstNameError" *ngIf="addUserForm.controls['firstName'].hasError('required')">
+            First Name is
+            <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field >
+        <input id="lastNameInput" matInput placeholder="Last Name" formControlName="lastName">
+
+        <mat-error id="requiredFirstNameError" *ngIf="addUserForm.controls['lastName'].hasError('required')">
+            Last Name is
+            <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field >
+        <input id="phoneNumberInput" matInput placeholder="Phone Number" formControlName="phoneNumber">
+      </mat-form-field>
+    </form>
+  </div>
+  <div fxFlex="95%">
+
+    <mat-card>
+      <mat-card-content>
+        <h2>Users</h2>
+
+        <div *ngIf="this.users.length < 1" class="container" fxLayout="row" fxLayoutAlign="center none">
+          <div fxFlex="50%" class="text-center no-records animate">
+            <mat-icon>people_outline</mat-icon>
+            <p>No users exist.</p>
+          </div>
+          <mat-icon> </mat-icon>
+        </div>
+
+        <div class="" *ngFor="let user of users">
+          <h4> First Name {{ user.firstName }}</h4>
+          <h4> Last Name {{ user.lastName }}</h4>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

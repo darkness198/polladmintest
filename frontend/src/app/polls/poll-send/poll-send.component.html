@@ -1,0 +1,21 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center none">
+  <div fxFlex="95%">
+    <mat-card>
+      <h2>Users</h2>
+      <div>
+        <div
+          class="user-container"
+          *ngFor="let mappedUser of mappedUsers; let i = index"
+        >
+          <p>{{ mappedUser.pollUser.firstName }}</p>
+          <mat-checkbox
+            style="margin-left: auto;"
+            (change)="setChanged($event, i)"
+            >Send</mat-checkbox
+          >
+        </div>
+      </div>
+    </mat-card>
+    <button mat-raised-button (click)="sendLinks()">Submit</button>
+  </div>
+</div>

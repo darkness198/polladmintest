@@ -1,0 +1,4 @@
+.addUserContainer {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+}
