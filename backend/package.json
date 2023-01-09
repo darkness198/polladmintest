@@ -28,7 +28,7 @@
     "bcrypt": "^4.0.1",
     "express": "^4.17.1",
     "express-rate-limit": "^5.1.1",
-    "firebase-admin": "^8.9.2",
+    "firebase-admin": "^11.4.1",
     "firebase-functions": "^3.3.0",
     "graphql": "^14.6.0",
     "graphql-tools": "^4.0.6",
